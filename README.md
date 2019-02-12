@@ -77,7 +77,7 @@ YES
 ```
 
 ## Hints
-In earlier readings, you were introduced to the concept of using a Python `list` as a [_stack_ data structure.](https://docs.python.org/2/tutorial/datastructures.html#using-lists-as-stacks).  This problem would lend itself nicely to such a strategy.  Also consider using a _while_ loop instead of a for loop, where each iteration through the while loop examines tokens from left to right, and reduces the size of the input line after each examination.
+In earlier readings, you were introduced to the concept of using a Python `list` as a [_stack_ data structure.](https://docs.python.org/2/tutorial/datastructures.html#using-lists-as-stacks).  This problem would lend itself nicely to such a strategy.  Also consider using a _while_-loop instead of a `for-loop`, where each iteration through the while-loop examines tokens from left to right, and reduces the size of the input line after each examination.
 
 ## Submissions
 Upload your implementation of the solution as a file named `nested.py` as your submission.  Be **SURE** to add your name as `__author__` in your file at the top, like this:
