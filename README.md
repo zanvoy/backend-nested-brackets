@@ -3,7 +3,7 @@ Today's exercise is drawn from the [ACM's](https://en.wikipedia.org/wiki/Associa
 
 During the actual contest, teams submit their code to an automated judge, which runs their code against several (secret) test cases to verify whether it produces the correct output. The real contest has both time pressure and penalties for incorrect / incomplete submissions, but you don't have to worry about that while practicing.
 
-Your submission will be a single-file python program that runs correctly on all the test inputs for the following task. It should take in input on stdin.
+Your submission will be a single-file python program that runs correctly on all the test inputs for the following task. It should read input from the `input.txt` file and write the solution to an output file named `output.txt`.
 
 ## Nesting a bunch of Brackets
 In this problem we consider expressions containing brackets that are properly nested. These expressions are obtained by juxtaposition of properly nested expressions in a pair of matching brackets, the left one an opening and the right one a closing bracket.
@@ -31,7 +31,7 @@ The input is a text-file. Each line contains an expression to be checked followe
 
 **Output**
 
-The output is a textfile. Each line contains the result of the check of the corresponding inputline, that is ‘YES’ (in upper case), if the expression is OK, and (if it is not OK) ‘NO’ followed by a space and the position of the error.
+The output is a textfile named `output.txt`. Each line contains the result of the check of the corresponding inputline, that is ‘YES’ (in upper case), if the expression is OK, and (if it is not OK) ‘NO’ followed by a space and the position of the error.
 
 Sample Input
 ```
@@ -45,7 +45,7 @@ YES
 ```
  
 
-Sample Input 2
+Sample Input 2 (input.txt)
 ```
 (*a++(*)
 (*a{+}*)
@@ -60,7 +60,7 @@ Sample Input 2
     aaa(aaaa
  *******
  ```
-Sample Output 2
+Sample Output 2 (output.txt)
 ```
 NO 6
 YES
@@ -75,6 +75,9 @@ YES
 NO 13
 YES
 ```
+
+## Hints
+In earlier readings, you were introduced to the concept of using a Python `list` as a [_stack_ data structure.](https://docs.python.org/2/tutorial/datastructures.html#using-lists-as-stacks).  This problem would lend itself nicely to such a strategy.  Also consider using a _while_-loop instead of a `for-loop`, where each iteration through the while-loop examines tokens from left to right, and reduces the size of the input line after each examination.
 
 ## Submissions
 Upload your implementation of the solution as a file named `nested.py` as your submission.  Be **SURE** to add your name as `__author__` in your file at the top, like this:
