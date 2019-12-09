@@ -75,7 +75,7 @@ YES
 YES
 NO 13
 YES
-NO 5
+NO 4
 ```
 
 ## Hints
