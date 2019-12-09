@@ -3,13 +3,21 @@
 """
 Module docstring: One line description of what your program does.
 """
-__author__ = "Your Github Username"
+__author__ = "???"
 
 import sys
 
+
+def is_nested(line):
+    """Validate a single input line for correct nesting"""
+    pass
+
+
 def main(args):
-    """Add your code here"""
-    
+    """Open the input file and call `is_nested()` for each line"""
+    # Results: print to console and also write to output file
+    pass
+
 
 if __name__ == '__main__':
-    main(sys.argv)
+    main(sys.argv[1:])

@@ -21,7 +21,7 @@ In this problem we have several pairs of brackets, so we have to impose a second
 <  >
 (*  *)
 ```
-The two characters `(*` should be interpreted as one symbol, not as an opening bracket `(` followed immediately by an asterisk, and similarly for `*)`. The combination `(*)` should be interpreted as `(*` followed by `)`.
+The two characters `(*` should be interpreted as one symbol (or token), not as an opening bracket `(` followed immediately by an asterisk, and similarly for `*)`. The combination `(*)` should be interpreted as `(*` followed by `)`.
 
 Write a program that checks whether expressions are properly nested. If the expression is not properly nested your program should determine the position of the offending bracket, that is the length of the shortest prefix of the expression that can not be extended to a properly nested expression. Don’t forget `(*` counts as one, as does `*)`. The characters that are not brackets also count as one.
 
@@ -59,6 +59,7 @@ Sample Input 2 (input.txt)
  aaaaaaa
     aaa(aaaa
  *******
+(([(
  ```
 Sample Output 2 (output.txt)
 ```
@@ -74,6 +75,7 @@ YES
 YES
 NO 13
 YES
+NO 5
 ```
 
 ## Hints
